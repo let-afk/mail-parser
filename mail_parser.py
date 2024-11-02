@@ -16,7 +16,7 @@ def mail_parser(mail_usr, password):
 
     input_usr = WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.XPATH, "//input[@name='username']")))
-    input_usr.send_keys("study.ai_172@mail.ru")
+    input_usr.send_keys("your mail")
 
     btn = driver.find_element(
         By.XPATH, "//button[@data-test-id='next-button']")
@@ -25,7 +25,7 @@ def mail_parser(mail_usr, password):
     input_pswd = WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.XPATH, "//input[@name='password']")))
     driver.implicitly_wait(0.1)
-    input_pswd.send_keys("NextPassword172#")
+    input_pswd.send_keys("your password")
 
     btn = driver.find_element(
         By.XPATH, "//button[@data-test-id='submit-button']")
